@@ -9,22 +9,35 @@ use App\Models\News;
 class NewsController extends Controller
 {
     public function aggregrate($id_rss){
+        // disini kita akan membuat logic untuk get rss data by id_rss
         $rss = Rss::findOrFail($id_rss);
         
-        $xmlContent = file_get_contents($rss->url);
-        $xml = simplexml_load_string($xmlContent);
+        // kita akan parsing xml to object
+        $xml = file_get_contents($rss->url);
+        $xmlObj = simplexml_load_string($xml);
+        // dd($xmlObj->channel);
 
-        foreach($xml->channel->item as $item){
+        // save to table news
+        foreach($xmlObj->channel->item as $xml){
+            
+            $title= $xml->title;
+            $desc= $xml->description;
+            // rss id 1 and 2
+            $desc = preg_replace(" /<img[^>]+\>/i", "", $desc);
+            $img= $xml->enclosure['url'];
+            $url=$xml->link;
             $data= array(
-                'title' => $item->title,
-                'img_url' => $item->enclosure['url'],
-                'description' => $item->description,
-                'source_url' => $item->link,
+                'title' => $title,
+                'img_url' => $img,
+                'description' => $desc,
+                'source_url' => $url,
                 'rss_id' => $id_rss
             );
             News::Create($data);
+            // dd($data);
         }
 
+        // get from news
         $news= News::where('rss_id', $id_rss)->get();
         foreach($news as $n){
             print_r($n->title ."<br>".$n->description);

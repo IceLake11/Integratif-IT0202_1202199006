@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 
+use Vedmant\FeedReader\Facades\FeedReader;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,5 +19,22 @@ use App\Http\Controllers\NewsController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', [App\Http\Controllers\TcController::class, 'index']);
 
 Route::get('/aggregrate/{rss_id}', [NewsController::class, 'aggregrate']);
+Route::get('/', [App\Http\Controllers\FeedController::class, 'index']);
+
+Route::get('/lifestyle', function () {
+    return view('lifestyle');
+});
+Route::get('/lifestyle', [App\Http\Controllers\LfController::class, 'index']);
+
+Route::get('/otomotif', function () {
+    return view('otomotif');
+});
+Route::get('/otomotif', [App\Http\Controllers\OtController::class, 'index']);
+
+Route::get('/tech', function () {
+    return view('tech');
+});
+Route::get('/tech', [App\Http\Controllers\TcController::class, 'index']);

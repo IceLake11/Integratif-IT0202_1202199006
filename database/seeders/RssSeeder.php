@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Rss;
 
@@ -15,13 +16,12 @@ class RssSeeder extends Seeder
     public function run()
     {
         Rss::create([
-            // 'name' => 'Motorsoprt',
-            // 'url' => "http://rss.cnn.com/rss/edition_motorsport.rss",
-
-            // 'name' => 'Sport Insider',
-            // 'url' => "https://esportsinsider.com/feed/",
-            'name' => 'NBA News',
-            'url' => "https://sports.ndtv.com/rss/nba",
-        ]);
+            // 'name' => 'Tekno',
+            // 'url' => "https://www.suara.com/rss/tekno"
+            // 'name' => 'Otomotif',
+            // 'url' => "https://www.suara.com/rss/otomotif"
+            'name' => 'Lifestyle',
+            'url' => "https://www.suara.com/rss/lifestyle"
+        ]);    
     }
 }
