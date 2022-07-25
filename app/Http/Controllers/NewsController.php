@@ -44,4 +44,8 @@ class NewsController extends Controller
             print_r("<br><br><br><br>");    
         }
     }
+    public function getNews(){
+        $news = News::all();
+        return response()->json($news);
+    }
 }

@@ -38,3 +38,11 @@ Route::get('/tech', function () {
     return view('tech');
 });
 Route::get('/tech', [App\Http\Controllers\TcController::class, 'index']);
+
+Route::get('/pokemon', function () {
+    return view('pokemon');
+});
+
+Route::get('/friends', function () {
+    return view('friends');
+});
