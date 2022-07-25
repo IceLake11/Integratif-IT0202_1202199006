@@ -63,7 +63,7 @@
 ## Phase 3
 
 - in home page i show all news of 3 rss
-- <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_1.png?raw=true"></p>
+- <p align="center"><img src= ![home](https://user-images.githubusercontent.com/93030868/180705110-9dd07472-2d3f-4547-bb8a-79552e55b0da.png)></p>
   
 - and i show in every category
 - Technology
