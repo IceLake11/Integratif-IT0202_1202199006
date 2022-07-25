@@ -63,17 +63,17 @@
 ## Phase 3
 
 - in home page i show all news of 3 rss
-- <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_1.png?raw=true"></p>
+- <p align="center"><img src= "assets/home.png"></p>
   
 - and i show in every category
 - Technology
-  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_1.png?raw=true"></p>
+  <p align="center"><img src= "assets/tech.png"></p>
 -Lifestyle
-  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_2.png?raw=true"></p>
+  <p align="center"><img src= "assets/life.png"></p>
 -Otomotif
-  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_3.png?raw=true"></p>
+  <p align="center"><img src= "assets/otomotif.png"></p>
 
 ## Final Exam
 -I make new page and show the pokemon API 
 -on the pokemon page i show image, type the pokemon and pokemon skill
-<p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_3.png?raw=true"></p>
+<p align="center"><img src= "assets/pokemon.png"></p>
