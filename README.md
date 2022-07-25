@@ -64,7 +64,6 @@
 
 - in home page i show all news of 3 rss
 - <p align="center"><img src= "assets/home.png"></p>
-  
 - and i show in every category
 - Technology
   <p align="center"><img src= "assets/tech.png"></p>
