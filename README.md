@@ -75,4 +75,4 @@
 ## Final Exam
 -I make new page and show the pokemon API 
 -on the pokemon page i show image, type the pokemon and pokemon skill
-<p align="center"><img src= "assets/pokemon.png"></p>
+<p align="center"><img src= "assets/pokemon1.png"></p>
